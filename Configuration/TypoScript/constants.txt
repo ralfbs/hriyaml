@@ -1,0 +1,26 @@
+plugin.tx_hriyaml {
+	view {
+		# cat=plugin.tx_hriyaml/file; type=string; label=Path to template root (FE)
+		#templateRootPath = EXT:hriyaml/Resources/Private/Templates/
+		# cat=plugin.tx_hriyaml/file; type=string; label=Path to template partials (FE)
+		#partialRootPath = EXT:hriyaml/Resources/Private/Partials/
+		# cat=plugin.tx_hriyaml/file; type=string; label=Path to template layouts (FE)
+		#layoutRootPath = EXT:hriyaml/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_hriyaml//a; type=string; label=Default storage PID
+		# storagePid = 
+	}
+	settings {
+  		# cat=plugin.tx_hriyaml/dims/a; type=string; label=Viewport: leave empty to ignore tag
+  		viewport = width=device-width, initial-scale=1.0
+  		# cat=plugin.tx_hriyaml/file/b; type=string; label=Path to mobile.css: loaded as last css file
+  		mobileCss = EXT:hriyaml/Resources/Public/Css/mobile.css
+  		# cat=plugin.tx_hriyaml/file/c; type=string; label=Path to YAML: leave empty for none
+  		yamlPath = EXT:hriyaml/Resources/Public/yaml401-120306/yaml/core/base.css  		
+	}
+}
+
+
+
+

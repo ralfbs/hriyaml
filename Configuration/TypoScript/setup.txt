@@ -1,0 +1,33 @@
+plugin.tx_hriyaml {
+	view {
+		templateRootPath = {$plugin.tx_hriyaml.view.templateRootPath}
+		partialRootPath = {$plugin.tx_hriyaml.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_hriyaml.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_hriyaml.persistence.storagePid}
+	}
+}
+
+plugin.tx_hriyaml._CSS_DEFAULT_STYLE (
+
+)
+
+
+
+
+# meta tags
+page.meta {
+  viewport = {$plugin.tx_hriyaml.settings.viewport}
+  viewport.required = 1
+}
+
+page.includeCSS {
+	yaml = {$plugin.tx_hriyaml.settings.yamlPath}
+	required = 1
+}
+
+# fix the the clearing of csc elements in yaml
+# {@see http://www.yaml.de/en/documentation/basics/how-floats-work.html}
+tt_content.stdWrap.outerWrap = <div class="floatbox">|</div> 
+
