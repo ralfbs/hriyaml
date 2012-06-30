@@ -1,28 +1,11 @@
-/* Smartphones (portrait and landscape) ----------- 
+/* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) { 
-
-	body {
-		background: none !important;
-		background-color: #fff;
-	}
-	.page_margins {
-		width: 600px !important;
-	}
-	#illu {
-		display: none;
-		width: 600px;
-	}
-	#col3 {
-		margin: 0px;
-	}
-	#col2 {
-		display: none;
-	}
+/* Styles */
  }
 
-*/
+
 
 /* Smartphones (landscape) ----------- */
 @media only screen
